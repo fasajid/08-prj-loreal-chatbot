@@ -15,17 +15,19 @@
   --brand-paper: #f7f1e4;
   --brand-white: #fffdf7;
   --brand-night: #17120d;
+  --page-gradient:
+    radial-gradient(ellipse at 50% 0, #3c2a15 0, #21180f 45%, var(--brand-night) 100%);
 }
 
 /* —— body + fonts —— */
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  /* L'Oréal's 2020 digital brand guide uses Helvetica Now for body text. */
+  font-family: "Helvetica Now Display W05", "Helvetica Now Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--brand-ink);
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background:
-    radial-gradient(ellipse at 50% 0, #3c2a15 0, #21180f 45%, var(--brand-night) 100%);
+  background: var(--page-gradient);
 }
 
 .page-wrapper {
@@ -35,7 +37,7 @@ body {
   padding: 0 clamp(20px, 5vw, 52px);
   border-right: 1px solid rgb(199 164 91 / 16%);
   border-left: 1px solid rgb(199 164 91 / 16%);
-  background: linear-gradient(180deg, rgb(255 255 255 / 3%), transparent 380px);
+  background: var(--page-gradient);
 }
 
 /* header */
@@ -57,6 +59,8 @@ body {
 }
 
 .site-title {
+  /* L'Oréal's 2020 digital brand guide uses Halesworth eText for headers. */
+  font-family: "Halesworth eText", "Halesworth", "Trebuchet MS", Arial, sans-serif;
   color: var(--brand-gold-light);
   font-size: 20px;
   font-weight: 500;
