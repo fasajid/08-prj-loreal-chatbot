@@ -98,16 +98,27 @@ body {
 
 /* messages */
 .msg {
+  width: fit-content;
+  max-width: 85%;
+  padding: 12px 16px;
   margin-bottom: 14px;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .msg.user {
   color: var(--brand-ink);
+  background: var(--brand-gold-light);
+  border-radius: 16px 16px 4px 16px;
+  margin-left: auto;
 }
 
 .msg.ai {
-  color: var(--brand-muted);
+  color: var(--brand-ink);
+  background: var(--brand-paper);
+  border: 1px solid var(--brand-border);
+  border-radius: 16px 16px 16px 4px;
+  margin-right: auto;
 }
 
 /* input row */
